@@ -42,9 +42,10 @@ export function GlobalHealthFactorCard() {
         <div className={classes.ring}>
           <RingProgress
             roundCaps
-            thickness={6}
-            size={150}
-            sections={[{ value: (borrowing / collateral) * 100, color: theme.primaryColor }]}
+            thickness={12}
+            size={170}
+            // @TODO Make colors dynamic:  < 70% Green  > 70% Yellow  > 90% Red
+            sections={[{ value: (borrowing / collateral) * 100, color: theme.colors.green[6] }]} 
             label={
               <div>
                 <Text ta="center" fz="lg" className={classes.label}>

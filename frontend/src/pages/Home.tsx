@@ -4,13 +4,11 @@ import { GlobalHealthFactorCard } from "src/pages/Cards/GlobalHealthFactorCard";
 import ProtocolList from "./ProtocolListButtons";
 import { useAppDispatch, useAppSelector } from '../app/myhooks';
 import { useState } from "react";
+import { SimulationCard } from "./Simulation/SimulationCard";
 
 export default function Home() {
 
   const simulationMode = useAppSelector((state) => state.simulationMode);
-  // const [isExpandedMode, setIsExpandedMode] = useState(false);
-
-  
 
   return (
     <>
@@ -23,7 +21,8 @@ export default function Home() {
         </Grid.Col>
         { simulationMode.simulationModeEnabled && (
           <Grid.Col span={6}>
-            <Title order={2}>Price Simulation Mode: </Title>
+            <Title order={4}>Price Simulation Mode: </Title>
+            <SimulationCard />
           </Grid.Col>
          )
         }

@@ -32,13 +32,13 @@ const ProtocolList = () => {
     {
       id: 3,
       name: "Compound-All",
-      active: false,
+      active: true,
       text: "Compound Protocol V2 V3"
     },
     {
       id: 4,
       name: "Venus",
-      active: false,
+      active: true,
       text: "Venus Protocol"
     }, {
       id: 5,
@@ -80,7 +80,6 @@ const ProtocolList = () => {
   return (
     // <Container fluid h={50} bg="var(--mantine-color-blue-light)">
     <Group justify="space-between">
-
       <div> Lending Platforms:
         {protocols.map((protocol) => (
           <Tooltip label={protocol.text}>

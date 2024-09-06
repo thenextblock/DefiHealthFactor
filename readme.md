@@ -6,7 +6,9 @@ Calculate and aggregate the global DeFi Health Factor from lending platforms, an
 
 <!-- [link title](#) -->
 
-![Health Factor Dashboard](./screenImage.png)
+![Health Factor Dashboard](./Dashboard-1.png)
+
+![Health Factor Dashboard Price Simulation Mode](./Dashboard-2.png)
 
 
 ## Project Description

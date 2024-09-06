@@ -1,10 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import mySlice from "./mySlice";
-
+// import mySlice from "./mySlice";
+import simulationModeReducer from "./simulationModeSlice";
 
 export const store = configureStore({
   reducer: {
-    mySlice: mySlice,
+    // mySlice: mySlice,
+    simulationMode: simulationModeReducer,
   },
 });
 

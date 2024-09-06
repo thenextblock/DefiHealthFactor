@@ -1,6 +1,6 @@
 import { Grid, Title } from "@mantine/core";
 import { HealthFactorChart } from "./Chart";
-import { GlobalHealthFactorCard } from "src/Cards/GlobalHealthFactorCard";
+import { GlobalHealthFactorCard } from "src/pages/Cards/GlobalHealthFactorCard";
 import ProtocolList from "./ProtocolListButtons";
 import { useAppDispatch, useAppSelector } from '../app/myhooks';
 import { useState } from "react";

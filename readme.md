@@ -1,9 +1,13 @@
 # Health Factor
 
 **DeFi Health Factor Analytical Dashboard & Simulator**  
-Calculate and aggregate the global DeFi Health Factor from various lending platforms, and present comprehensive analytics in a single, unified dashboard.
+
+Calculate and aggregate the global DeFi Health Factor from lending platforms, and present comprehensive analytics in a single, unified dashboard.
 
 <!-- [link title](#) -->
+
+![Health Factor Dashboard](./screenImage.png)
+
 
 ## Project Description
 

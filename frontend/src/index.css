@@ -1,0 +1,53 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+/* Mantine */
+
+.app-shell-container {
+  width: 960px; /* Set the desired fixed width */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.table-title {
+  color: #130F26;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+
+.wallet-button {
+  max-width: 128px;
+  display: flex;
+  padding: 8px 32px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.page-title {
+  font-family: Manrope;
+  /* font-size: 11px; */
+  /* font-style: normal; */
+  font-weight: 800;
+  line-height: 120%; /* 28.8px */
+}
+
+
+.drawer-title {
+  /* font-size: 1.5rem; */
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}

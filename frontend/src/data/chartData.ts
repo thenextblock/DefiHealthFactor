@@ -18,7 +18,7 @@ export const data = [
     // { date: 'Aug 17', health: 80 },
     // { date: 'Aug 18', health: 55 },
     // { date: 'Aug 19', health: 74 },
-    // { date: 'Aug 20', health: 72 },
+    { date: 'Aug 20', health: 72 },
     { date: 'Aug 21', health: 68 },
     { date: 'Aug 22', health: 60 },
     { date: 'Aug 23', health: 63 },

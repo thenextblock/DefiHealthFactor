@@ -1,5 +1,5 @@
 import { Grid, Title } from "@mantine/core";
-import { HealthFactorChart } from "./Chart";
+import { HealthFactoChartLine, HealthFactorChart } from "./Chart";
 import { GlobalHealthFactorCard } from "src/pages/Cards/GlobalHealthFactorCard";
 import ProtocolList from "./ProtocolListButtons";
 import { useAppDispatch, useAppSelector } from '../app/myhooks';
@@ -27,7 +27,7 @@ export default function Home() {
          )
         }
         <Grid.Col span={simulationMode.simulationModeEnabled ? 12 : 7}>
-          <HealthFactorChart />
+          <HealthFactoChartLine />
         </Grid.Col>
       </Grid>
     </>

@@ -45,11 +45,11 @@ export function GlobalHealthFactorCard() {
             thickness={12}
             size={170}
             // @TODO Make colors dynamic:  < 70% Green  > 70% Yellow  > 90% Red
-            sections={[{ value: (borrowing / collateral) * 100, color: theme.colors.green[6] }]} 
+            sections={[{ value: (collateral / borrowing ) * 100, color: theme.colors.green[6] }]} 
             label={
               <div>
                 <Text ta="center" fz="lg" className={classes.label}>
-                  {((borrowing /collateral) * 100).toFixed(0)}%
+                  {((collateral / borrowing ) * 100).toFixed(0)}%
                 </Text>
                 <Text ta="center" fz="xs" c="dimmed">
                   Health factor

@@ -1,0 +1,129 @@
+type AavePool_BackUnbacked {
+  id: ID!
+  reserve: String!
+  backer: String!
+  amount: BigInt!
+  fee: BigInt!
+}
+
+type AavePool_Borrow {
+  id: ID!
+  reserve: String!
+  user: String!
+  onBehalfOf: String!
+  amount: BigInt!
+  interestRateMode: BigInt!
+  borrowRate: BigInt!
+  referralCode: BigInt!
+}
+
+type AavePool_FlashLoan {
+  id: ID!
+  target: String!
+  initiator: String!
+  asset: String!
+  amount: BigInt!
+  interestRateMode: BigInt!
+  premium: BigInt!
+  referralCode: BigInt!
+}
+
+type AavePool_IsolationModeTotalDebtUpdated {
+  id: ID!
+  asset: String!
+  totalDebt: BigInt!
+}
+
+type AavePool_LiquidationCall {
+  id: ID!
+  collateralAsset: String!
+  debtAsset: String!
+  user: String!
+  debtToCover: BigInt!
+  liquidatedCollateralAmount: BigInt!
+  liquidator: String!
+  receiveAToken: Boolean!
+}
+
+type AavePool_MintUnbacked {
+  id: ID!
+  reserve: String!
+  user: String!
+  onBehalfOf: String!
+  amount: BigInt!
+  referralCode: BigInt!
+}
+
+type AavePool_MintedToTreasury {
+  id: ID!
+  reserve: String!
+  amountMinted: BigInt!
+}
+
+type AavePool_RebalanceStableBorrowRate {
+  id: ID!
+  reserve: String!
+  user: String!
+}
+
+type AavePool_Repay {
+  id: ID!
+  reserve: String!
+  user: String!
+  repayer: String!
+  amount: BigInt!
+  useATokens: Boolean!
+}
+
+type AavePool_ReserveDataUpdated {
+  id: ID!
+  reserve: String!
+  liquidityRate: BigInt!
+  stableBorrowRate: BigInt!
+  variableBorrowRate: BigInt!
+  liquidityIndex: BigInt!
+  variableBorrowIndex: BigInt!
+}
+
+type AavePool_ReserveUsedAsCollateralDisabled {
+  id: ID!
+  reserve: String!
+  user: String!
+}
+
+type AavePool_ReserveUsedAsCollateralEnabled {
+  id: ID!
+  reserve: String!
+  user: String!
+}
+
+type AavePool_Supply {
+  id: ID!
+  reserve: String!
+  user: String!
+  onBehalfOf: String!
+  amount: BigInt!
+  referralCode: BigInt!
+}
+
+type AavePool_SwapBorrowRateMode {
+  id: ID!
+  reserve: String!
+  user: String!
+  interestRateMode: BigInt!
+}
+
+type AavePool_UserEModeSet {
+  id: ID!
+  user: String!
+  categoryId: BigInt!
+}
+
+type AavePool_Withdraw {
+  id: ID!
+  reserve: String!
+  user: String!
+  to: String!
+  amount: BigInt!
+}
+

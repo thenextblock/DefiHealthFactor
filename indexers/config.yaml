@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: AavePools
+networks:
+- id: 1
+  start_block: 0
+  contracts:
+  - name: aavePool
+    address:
+    - 0x34339f94350EC5274ea44d0C37DAe9e968c44081
+    handler: src/EventHandlers.ts
+    events:
+    - event: BackUnbacked(address indexed reserve, address indexed backer, uint256 amount, uint256 fee)
+    - event: Borrow(address indexed reserve, address user, address indexed onBehalfOf, uint256 amount, uint8 interestRateMode, uint256 borrowRate, uint16 indexed referralCode)
+    - event: FlashLoan(address indexed target, address initiator, address indexed asset, uint256 amount, uint8 interestRateMode, uint256 premium, uint16 indexed referralCode)
+    - event: IsolationModeTotalDebtUpdated(address indexed asset, uint256 totalDebt)
+    - event: LiquidationCall(address indexed collateralAsset, address indexed debtAsset, address indexed user, uint256 debtToCover, uint256 liquidatedCollateralAmount, address liquidator, bool receiveAToken)
+    - event: MintUnbacked(address indexed reserve, address user, address indexed onBehalfOf, uint256 amount, uint16 indexed referralCode)
+    - event: MintedToTreasury(address indexed reserve, uint256 amountMinted)
+    - event: RebalanceStableBorrowRate(address indexed reserve, address indexed user)
+    - event: Repay(address indexed reserve, address indexed user, address indexed repayer, uint256 amount, bool useATokens)
+    - event: ReserveDataUpdated(address indexed reserve, uint256 liquidityRate, uint256 stableBorrowRate, uint256 variableBorrowRate, uint256 liquidityIndex, uint256 variableBorrowIndex)
+    - event: ReserveUsedAsCollateralDisabled(address indexed reserve, address indexed user)
+    - event: ReserveUsedAsCollateralEnabled(address indexed reserve, address indexed user)
+    - event: Supply(address indexed reserve, address user, address indexed onBehalfOf, uint256 amount, uint16 indexed referralCode)
+    - event: SwapBorrowRateMode(address indexed reserve, address indexed user, uint8 interestRateMode)
+    - event: UserEModeSet(address indexed user, uint8 categoryId)
+    - event: Withdraw(address indexed reserve, address indexed user, address indexed to, uint256 amount)

@@ -2,7 +2,24 @@
 
 **DeFi Health Factor Analytical Dashboard & Simulator**  
 
-Calculate and aggregate the global DeFi Health Factor from lending platforms, and present comprehensive analytics in a single, unified dashboard.
+- Calculate and aggregate the global DeFi Health Factor from lending platforms.
+
+
+The project is split into 3 parts:
+
+### Frontend 
+[Frontend Repository](https://github.com/thenextblock/DefiHealthFactor/tree/main/frontend)
+- Contains the Defi Health Factor Chart and Price Simulation interface.
+
+### Backend 
+[Backend Repository](https://github.com/thenextblock/DefiHealthFactor/tree/main/Backend)
+- Standard REST API.
+
+### Indexers 
+[Indexers Repository](https://github.com/thenextblock/DefiHealthFactor/tree/main/indexers)
+- ENVIO indexer fetching and indexing data from the chain.
+
+
 
 <!-- [link title](#) -->
 
@@ -15,9 +32,9 @@ Calculate and aggregate the global DeFi Health Factor from lending platforms, an
 
 ### DeFi Health Factor Analytical Dashboard & Simulator
 
-An analytical dashboard that provides real-time indexed data from various lending platforms. Our focus is on the basic DeFi indicator, the Health Factor, which is calculated using the simple formula: *Total Borrow / Total Collateral*. The platform will display this aggregated indicator across all DeFi platforms, as well as by individual chains and protocols. Users will also be able to drill down to account-level data.
+An analytical dashboard that provides real-time indexed data from different lending platforms (currently only [AAVE](https://aave.com/)). Our focus is on the basic DeFi indicator, the **Health Factor**, which is calculated using the simple formula: `Total Borrow / Total Collateral`. The platform will display this aggregated indicator across all DeFi platforms, as well as by individual chains and protocols.
 
-Additionally, we will implement a *Price Simulator* where users can simulate changes in collateral prices. This feature will generate reports on how many accounts would be liquidated and the potential amount of assets that could be dumped on the market, allowing users to visualize the spiral effect.
+Additionally, we will implement a **Price Simulator** where users can simulate changes in collateral prices. This feature will generate reports on how many accounts would be liquidated and the potential amount of assets that could be dumped on the market, allowing users to visualize the spiral effect.
 
 ## How it's Made
 

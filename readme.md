@@ -28,7 +28,7 @@ Calculate and aggregate the global DeFi Health Factor from lending platforms.
 
 ### DeFi Health Factor Analytical Dashboard & Simulator
 
-An analytical dashboard that provides real-time indexed data from different lending platforms (currently only [AAVE](https://aave.com/)). Our focus is on the basic DeFi indicator, the **Health Factor**, which is calculated using the simple formula: `Total Collateral / Total Borrow `. The platform will display this aggregated indicator across all DeFi platforms, as well as by individual chains and protocols.
+An analytical dashboard that provides real-time indexed data from different lending platforms (currently only [AAVE](https://aave.com/)). Our focus is on the basic DeFi indicator, the **Health Factor**, which is calculated using the simple formula: `Collateral Value * Liquidation Threshold /  Borrowed Amount `. The platform will display this aggregated indicator across all DeFi platforms, as well as by individual chains and protocols.
 
 Additionally, we will implement a **Collateral Assets Price Simulator** where users can simulate changes in collateral Assets prices. This feature will generate reports on how many accounts would be liquidated and the potential amount of assets that could be dumped on the market, allowing users to visualize the spiral effect.
 
